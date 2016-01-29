@@ -1,0 +1,26 @@
+.spoiler {
+  padding: 1em 0;
+
+  .title {
+    cursor: pointer;
+    display: block;
+  }
+
+  .title:before {
+    content: '► ';
+  }
+
+  .content {
+    display: none;
+  }
+}
+
+.spoiler.open {
+  .title:before {
+    content: '▼ ';
+  }
+
+  .content {
+    display: block;
+  }
+}

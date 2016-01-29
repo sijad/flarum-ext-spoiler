@@ -1,0 +1,35 @@
+{
+    "name": "sijad/flarum-spoiler",
+    "description": "Add spoiler and details BBCode to flarum.",
+    "type": "flarum-extension",
+    "keywords": ["formatting"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sajjad Hashemian",
+            "email": "wolaws@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/sijad/flarum-spoiler/issues",
+        "source": "https://github.com/sijad/flarum-spoiler"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sijad\\Spoiler\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Spoiler",
+            "icon": {
+                "name": "minus-square",
+                "backgroundColor": "#f05049",
+                "color": "#fff"
+            }
+        }
+    }
+}
