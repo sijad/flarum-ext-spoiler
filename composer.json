@@ -1,6 +1,6 @@
 {
     "name": "sijad/flarum-spoiler",
-    "description": "Add spoiler and details BBCode to flarum.",
+    "description": "Spoiler BBCode for flarum.",
     "type": "flarum-extension",
     "keywords": ["formatting"],
     "license": "MIT",
