@@ -1,25 +1,35 @@
-.spoiler {
-  padding: 1em 0;
+div.spoiler {
+  @spoiler-padding: 10px;
 
-  .title {
-    cursor: pointer;
-    display: block;
+  display: block;
+
+  div.title {
+    i {
+      width: @spoiler-padding;
+      display: inline-block;
+      color: @link-color;
+      text-align: center;
+    }
+
+    span {
+      cursor: pointer;
+      border-bottom: 2px dashed @control-bg;
+      color: @link-color;
+
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+        border-color: @link-color;
+      }
+    }
   }
 
-  .title:before {
-    content: '► ';
-  }
-
-  .content {
+  div.content {
     display: none;
+    padding-left: @spoiler-padding;
   }
 }
 
 .spoiler.open {
-  .title:before {
-    content: '▼ ';
-  }
-
   .content {
     display: block;
   }
