@@ -27,7 +27,7 @@ class AddBBCode
 
         $event->configurator->BBCodes->addCustom(
             '[SPOILER title={TEXT1;optional}]{TEXT2}[/SPOILER]',
-            '<div class="spoiler"><div class="title" role="button" onclick="parentNode.classList.toggle(\'open\');"><i class="fa"></i>&nbsp;<span>{TEXT1}</span></div><div class="content">{TEXT2}</div></div>'
+            '<div class="spoiler"><div class="title" role="button" onclick="$(this).parent().toggleClass(\'open\');"><i class="fa"></i>&nbsp;<span>{TEXT1}</span></div><div class="content">{TEXT2}</div></div>'
         );
     }
 }
