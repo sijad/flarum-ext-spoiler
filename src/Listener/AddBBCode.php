@@ -15,13 +15,13 @@ class AddBBCode
      */
     public function subscribe(Dispatcher $events)
     {
-        $events->listen(ConfigureFormatter::class, [$this, 'AddBBCode']);
+        $events->listen(ConfigureFormatter::class, [$this, 'addBBCode']);
     }
 
     /**
      * @param ConfigureFormatter $event
      */
-    public function AddBBCode(ConfigureFormatter $event)
+    public function addBBCode(ConfigureFormatter $event)
     {
         // $event->configurator->BBCodes->addFromRepository('SPOILER');
 
