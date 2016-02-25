@@ -9,6 +9,10 @@ div.spoiler {
       display: inline-block;
       color: @link-color;
       text-align: center;
+
+      &:before {
+        content: "\f0da";
+      }
     }
 
     span {
@@ -27,10 +31,17 @@ div.spoiler {
     display: none;
     padding-left: @spoiler-padding;
   }
-}
 
-.spoiler.open {
-  .content {
-    display: block;
+  &.open {
+    .content {
+      display: block;
+    }
+    div.title {
+      i {
+        &:before {
+          content: "\f0d7";
+        }
+      }
+    }
   }
 }
