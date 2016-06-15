@@ -1,14 +1,3 @@
-# Flarum Spoiler BBCode
+# Deprecated :dizzy_face:
 
-###Usage
-```
-[SPOILER=Title]Text To Hide[/SPOILER]
-```
-
-###How To Install
-run below command while you're in flarum root folder:
-```
-composer require sijad/flarum-spoiler
-```
-
-now you need to enable it in flarum admin page.
+consider using [Spoiler Alert](https://github.com/sijad/flarum-ext-spoiler-alert) or [Details](https://github.com/sijad/flarum-ext-details) instead
